@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/lab1/lab1.srcs/sources_1/new/reg_inw_outw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_inw_outw
+INFO: [VRFC 10-2458] undeclared symbol x_out, assumed default net type wire [/home/ubuntu/lab1/lab1.srcs/sources_1/new/reg_inw_outw.v:35]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/lab1/lab1.srcs/sim_1/new/test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_bench
