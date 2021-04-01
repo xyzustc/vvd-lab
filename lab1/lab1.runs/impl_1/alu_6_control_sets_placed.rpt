@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Thu Apr  1 14:43:02 2021
+| Date         : Thu Apr  1 15:16:02 2021
 | Host         : VM2639-zhou-vivado running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_control_sets -verbose -file alu_6_control_sets_placed.rpt
 | Design       : alu_6
@@ -74,8 +74,8 @@ Table of Contents
 |  Clock Signal  | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +----------------+---------------+------------------+------------------+----------------+
 |  clk_IBUF_BUFG | reg_F/ef2_out |                  |                2 |              3 |
-|  clk_IBUF_BUFG | reg_B/eb1_out |                  |                2 |              6 |
 |  clk_IBUF_BUFG | reg_A/ea0_out |                  |                3 |              6 |
+|  clk_IBUF_BUFG | reg_B/eb1_out |                  |                2 |              6 |
 |  clk_IBUF_BUFG |               |                  |                3 |              7 |
 +----------------+---------------+------------------+------------------+----------------+
 

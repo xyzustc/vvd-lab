@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Thu Apr  1 14:43:02 2021
+| Date         : Thu Apr  1 15:16:02 2021
 | Host         : VM2639-zhou-vivado running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_utilization -file alu_6_utilization_placed.rpt -pb alu_6_utilization_placed.pb
 | Design       : alu_6

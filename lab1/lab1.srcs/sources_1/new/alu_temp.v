@@ -62,9 +62,9 @@ begin
 //        default:    z_reg = 1;
 //    endcase
     if(y_wire==0)
-        z_reg = 0;
-    else
         z_reg = 1;
+    else
+        z_reg = 0;
 end
 
 endmodule

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Thu Apr  1 14:43:39 2021
+| Date         : Thu Apr  1 15:16:38 2021
 | Host         : VM2639-zhou-vivado running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_timing_summary -max_paths 10 -file alu_6_timing_summary_routed.rpt -pb alu_6_timing_summary_routed.pb -rpx alu_6_timing_summary_routed.rpx -warn_on_violation
 | Design       : alu_6
@@ -288,9 +288,9 @@ Slack (MET) :             6.118ns  (required time - arrival time)
     SLICE_X1Y121         LUT3 (Prop_lut3_I1_O)        0.124     7.258 r  reg_B/__3_carry__0_i_2/O
                          net (fo=1, routed)           0.000     7.258    alu_ins6/x_out_reg_reg[5][0]
     SLICE_X1Y121         CARRY4 (Prop_carry4_S[0]_O[0])
-                                                      0.247     7.505 r  alu_ins6/__3_carry__0/O[0]
+                                                      0.247     7.505 f  alu_ins6/__3_carry__0/O[0]
                          net (fo=1, routed)           0.637     8.142    reg_F/data0[4]
-    SLICE_X0Y121         LUT6 (Prop_lut6_I5_O)        0.299     8.441 r  reg_F/x_out_reg[4]_i_1/O
+    SLICE_X0Y121         LUT6 (Prop_lut6_I5_O)        0.299     8.441 f  reg_F/x_out_reg[4]_i_1/O
                          net (fo=2, routed)           0.587     9.027    reg_F/x_out_reg_reg[2]_0[4]
     SLICE_X0Y119         LUT6 (Prop_lut6_I1_O)        0.124     9.151 r  reg_F/x_out_reg[0]_i_1/O
                          net (fo=1, routed)           0.000     9.151    reg_Z/alu_z
@@ -809,7 +809,7 @@ Slack (MET) :             0.473ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
     SLICE_X0Y122         FDRE (Prop_fdre_C_Q)         0.141     1.648 r  reg_F/x_out_reg_reg[2]/Q
                          net (fo=6, routed)           0.139     1.788    reg_F/x_out_reg_reg_n_0_[2]
-    SLICE_X0Y121         LUT6 (Prop_lut6_I0_O)        0.045     1.833 r  reg_F/x_out_reg[4]_i_1/O
+    SLICE_X0Y121         LUT6 (Prop_lut6_I0_O)        0.045     1.833 f  reg_F/x_out_reg[4]_i_1/O
                          net (fo=2, routed)           0.210     2.043    reg_F/x_out_reg_reg[2]_0[4]
     SLICE_X0Y119         LUT6 (Prop_lut6_I1_O)        0.045     2.088 r  reg_F/x_out_reg[0]_i_1/O
                          net (fo=1, routed)           0.000     2.088    reg_Z/alu_z
