@@ -67,16 +67,16 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-277396-VM2639-zhou-vivado/incrSyn
+  set_param synth.incrementalSynthesisCache ./.Xil/Vivado-113177-VM2639-zhou-vivado/incrSyn
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/ubuntu/lab1_fsm/lab1_fsm.cache/wt [current_project]
-  set_property parent.project_path /home/ubuntu/lab1_fsm/lab1_fsm.xpr [current_project]
-  set_property ip_output_repo /home/ubuntu/lab1_fsm/lab1_fsm.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.cache/wt [current_project]
+  set_property parent.project_path /home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.xpr [current_project]
+  set_property ip_output_repo /home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet /home/ubuntu/lab1_fsm/lab1_fsm.runs/synth_1/fsm.dcp
-  read_xdc /home/ubuntu/lab1_fsm/lab1_fsm.srcs/constrs_1/new/io.xdc
+  add_files -quiet /home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.runs/synth_1/fsm.dcp
+  read_xdc /home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.srcs/constrs_1/new/io.xdc
   link_design -top fsm -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -149,24 +149,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  catch { write_mem_info -force fsm.mmi }
-  write_bitstream -force fsm.bit 
-  catch {write_debug_probes -quiet -force fsm}
-  catch {file copy -force fsm.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

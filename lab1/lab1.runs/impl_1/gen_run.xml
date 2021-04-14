@@ -1,32 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1617290082">
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="RDI-RDI" Name="alu_6.vdi"/>
-  <File Type="BG-DRC" Name="alu_6.drc"/>
-  <File Type="BG-BGN" Name="alu_6.bgn"/>
-  <File Type="BITSTR-SYSDEF" Name="alu_6.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="PA-TCL" Name="alu_6.tcl"/>
+  <File Type="REPORTS-TCL" Name="alu_6_reports.tcl"/>
+  <File Type="OPT-DCP" Name="alu_6_opt.dcp"/>
+  <File Type="OPT-DRC" Name="alu_6_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="alu_6.hwdef"/>
+  <File Type="PWROPT-DCP" Name="alu_6_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="alu_6_placed.dcp"/>
+  <File Type="PLACE-IO" Name="alu_6_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="alu_6_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="alu_6_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="alu_6_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="alu_6_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="alu_6_postplace_pwropt.dcp"/>
   <File Type="BITSTR-LTX" Name="alu_6.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-BIT" Name="alu_6.bit"/>
+  <File Type="ROUTE-BUS-SKEW" Name="alu_6_bus_skew_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="alu_6.msk"/>
+  <File Type="BG-BGN" Name="alu_6.bgn"/>
+  <File Type="BG-BIN" Name="alu_6.bin"/>
+  <File Type="RDI-RDI" Name="alu_6.vdi"/>
+  <File Type="ROUTE-DRC-RPX" Name="alu_6_drc_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="alu_6_bus_skew_routed.rpx"/>
+  <File Type="BG-DRC" Name="alu_6.drc"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="alu_6_postroute_physopt.dcp"/>
   <File Type="BITSTR-MMI" Name="alu_6.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="alu_6.sysdef"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="alu_6_postroute_physopt_bb.dcp"/>
   <File Type="BITSTR-BMM" Name="alu_6_bd.bmm"/>
   <File Type="BITSTR-NKY" Name="alu_6.nky"/>
+  <File Type="PHYSOPT-DCP" Name="alu_6_physopt.dcp"/>
   <File Type="BITSTR-RBT" Name="alu_6.rbt"/>
-  <File Type="BITSTR-MSK" Name="alu_6.msk"/>
-  <File Type="BG-BIN" Name="alu_6.bin"/>
-  <File Type="BG-BIT" Name="alu_6.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="alu_6_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="alu_6_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="alu_6_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="alu_6_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="alu_6_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="alu_6_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="alu_6_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="alu_6_postroute_physopt.dcp"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="alu_6_bus_skew_routed.rpx"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="alu_6_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW" Name="alu_6_bus_skew_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="alu_6_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="alu_6_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-TIMING-RPX" Name="alu_6_timing_summary_routed.rpx"/>
   <File Type="ROUTE-TIMING-PB" Name="alu_6_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="alu_6_timing_summary_routed.rpt"/>
@@ -38,37 +45,11 @@
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="alu_6_methodology_drc_routed.pb"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="alu_6_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="alu_6_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="alu_6_drc_routed.rpx"/>
   <File Type="ROUTE-DRC-PB" Name="alu_6_drc_routed.pb"/>
   <File Type="ROUTE-DRC" Name="alu_6_drc_routed.rpt"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="alu_6_routed_bb.dcp"/>
   <File Type="ROUTE-DCP" Name="alu_6_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="alu_6_routed_error.dcp"/>
-  <File Type="PHYSOPT-TIMING" Name="alu_6_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="alu_6_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="alu_6_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="alu_6_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="alu_6_postplace_pwropt.dcp"/>
-  <File Type="PLACE-TIMING" Name="alu_6_timing_summary_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="alu_6_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="alu_6_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-CTRL" Name="alu_6_control_sets_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="alu_6_utilization_placed.pb"/>
-  <File Type="PLACE-UTIL" Name="alu_6_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="alu_6_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-IO" Name="alu_6_io_placed.rpt"/>
-  <File Type="PLACE-DCP" Name="alu_6_placed.dcp"/>
-  <File Type="PWROPT-DRC" Name="alu_6_drc_pwropted.rpt"/>
-  <File Type="PWROPT-DCP" Name="alu_6_pwropt.dcp"/>
-  <File Type="OPT-HWDEF" Name="alu_6.hwdef"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="alu_6_methodology_drc_opted.rpt"/>
-  <File Type="OPT-DRC" Name="alu_6_drc_opted.rpt"/>
-  <File Type="OPT-DCP" Name="alu_6_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="alu_6_timing_summary_init.rpt"/>
-  <File Type="PWROPT-TIMING" Name="alu_6_timing_summary_pwropted.rpt"/>
-  <File Type="REPORTS-TCL" Name="alu_6_reports.tcl"/>
-  <File Type="OPT-TIMING" Name="alu_6_timing_summary_opted.rpt"/>
-  <File Type="PA-TCL" Name="alu_6.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/alu_temp.v">

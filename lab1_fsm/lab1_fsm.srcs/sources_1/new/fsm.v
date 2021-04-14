@@ -33,7 +33,8 @@ module fsm(
 //    output en_wire
     );
 
-    
+//reg [6:0] f;
+//assign f_wire=f;
 reg button_r1,button_r2;
 always@(posedge clk)
     button_r1 <= en;
@@ -55,9 +56,9 @@ assign cur_state = cur_state_reg;
 reg [1:0] next_state_reg;
 always@(*)
 begin
-    if(rst)
-        next_state_reg = S_0;
-    else
+//    if(rst)
+//        next_state_reg = S_0;
+//    else
     begin
         case(cur_state)
             S_0: begin if(en_wire) next_state_reg=S_1; end
@@ -69,7 +70,9 @@ begin
 end
 always@(posedge clk)
 begin
-    if(en_wire)
+    if(rst)
+        cur_state_reg <= S_0;
+    else if(en_wire)
         cur_state_reg <= next_state_reg;
 end
 
@@ -152,7 +155,6 @@ begin
 end
 
 wire [2:0] alu_opcode;
-wire [6:0] sum;
 assign alu_opcode=3'b000;
 alu_temp#(7) alu_ins(
     .a(d1_reg),

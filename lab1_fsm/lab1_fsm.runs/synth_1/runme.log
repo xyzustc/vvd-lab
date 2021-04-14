@@ -15,33 +15,30 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 295687 
-WARNING: [Synth 8-2507] parameter declaration becomes local in alu_temp with formal parameter declaration list [/home/ubuntu/lab1/lab1.srcs/sources_1/new/alu_temp.v:34]
-WARNING: [Synth 8-2507] parameter declaration becomes local in alu_temp with formal parameter declaration list [/home/ubuntu/lab1/lab1.srcs/sources_1/new/alu_temp.v:35]
-WARNING: [Synth 8-2507] parameter declaration becomes local in alu_temp with formal parameter declaration list [/home/ubuntu/lab1/lab1.srcs/sources_1/new/alu_temp.v:36]
-WARNING: [Synth 8-2507] parameter declaration becomes local in alu_temp with formal parameter declaration list [/home/ubuntu/lab1/lab1.srcs/sources_1/new/alu_temp.v:37]
-WARNING: [Synth 8-2507] parameter declaration becomes local in alu_temp with formal parameter declaration list [/home/ubuntu/lab1/lab1.srcs/sources_1/new/alu_temp.v:38]
-WARNING: [Synth 8-976] sum has already been declared [/home/ubuntu/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v:155]
-WARNING: [Synth 8-2654] second declaration of sum ignored [/home/ubuntu/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v:155]
-INFO: [Synth 8-994] sum is declared here [/home/ubuntu/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v:125]
+INFO: Helper process launched with PID 113783 
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu_temp with formal parameter declaration list [/home/ubuntu/vvd-lab/lab1/lab1.srcs/sources_1/new/alu_temp.v:34]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu_temp with formal parameter declaration list [/home/ubuntu/vvd-lab/lab1/lab1.srcs/sources_1/new/alu_temp.v:35]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu_temp with formal parameter declaration list [/home/ubuntu/vvd-lab/lab1/lab1.srcs/sources_1/new/alu_temp.v:36]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu_temp with formal parameter declaration list [/home/ubuntu/vvd-lab/lab1/lab1.srcs/sources_1/new/alu_temp.v:37]
+WARNING: [Synth 8-2507] parameter declaration becomes local in alu_temp with formal parameter declaration list [/home/ubuntu/vvd-lab/lab1/lab1.srcs/sources_1/new/alu_temp.v:38]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1705.266 ; gain = 156.652 ; free physical = 1418 ; free virtual = 2180
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1705.715 ; gain = 156.684 ; free physical = 72 ; free virtual = 333
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'fsm' [/home/ubuntu/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fsm' [/home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v:23]
 	Parameter S_0 bound to: 2'b00 
 	Parameter S_1 bound to: 2'b01 
 	Parameter S_2 bound to: 2'b10 
-INFO: [Synth 8-6157] synthesizing module 'alu_temp' [/home/ubuntu/lab1/lab1.srcs/sources_1/new/alu_temp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu_temp' [/home/ubuntu/vvd-lab/lab1/lab1.srcs/sources_1/new/alu_temp.v:23]
 	Parameter WIDTH bound to: 7 - type: integer 
 	Parameter f_plus bound to: 3'b000 
 	Parameter f_minus bound to: 3'b001 
 	Parameter f_and bound to: 3'b010 
 	Parameter f_or bound to: 3'b011 
 	Parameter f_xor bound to: 3'b100 
-INFO: [Synth 8-6155] done synthesizing module 'alu_temp' (1#1) [/home/ubuntu/lab1/lab1.srcs/sources_1/new/alu_temp.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'fsm' (2#1) [/home/ubuntu/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu_temp' (1#1) [/home/ubuntu/vvd-lab/lab1/lab1.srcs/sources_1/new/alu_temp.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fsm' (2#1) [/home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1735.172 ; gain = 186.559 ; free physical = 1449 ; free virtual = 2212
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1735.621 ; gain = 186.590 ; free physical = 105 ; free virtual = 366
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -54,46 +51,46 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1752.984 ; gain = 204.371 ; free physical = 1447 ; free virtual = 2210
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1753.434 ; gain = 204.402 ; free physical = 101 ; free virtual = 363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1752.984 ; gain = 204.371 ; free physical = 1447 ; free virtual = 2210
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1753.434 ; gain = 204.402 ; free physical = 102 ; free virtual = 364
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/ubuntu/lab1_fsm/lab1_fsm.srcs/constrs_1/new/io.xdc]
-Finished Parsing XDC File [/home/ubuntu/lab1_fsm/lab1_fsm.srcs/constrs_1/new/io.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ubuntu/lab1_fsm/lab1_fsm.srcs/constrs_1/new/io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fsm_propImpl.xdc].
+Parsing XDC File [/home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.srcs/constrs_1/new/io.xdc]
+Finished Parsing XDC File [/home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.srcs/constrs_1/new/io.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.srcs/constrs_1/new/io.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fsm_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/fsm_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1909.672 ; gain = 0.000 ; free physical = 1351 ; free virtual = 2114
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1918.090 ; gain = 0.000 ; free physical = 12 ; free virtual = 273
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1909.672 ; gain = 0.000 ; free physical = 1351 ; free virtual = 2114
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 1918.090 ; gain = 0.000 ; free physical = 12 ; free virtual = 274
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1909.672 ; gain = 361.059 ; free physical = 1423 ; free virtual = 2185
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1918.090 ; gain = 369.059 ; free physical = 81 ; free virtual = 343
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1909.672 ; gain = 361.059 ; free physical = 1423 ; free virtual = 2185
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1918.090 ; gain = 369.059 ; free physical = 81 ; free virtual = 343
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1909.672 ; gain = 361.059 ; free physical = 1422 ; free virtual = 2185
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1918.090 ; gain = 369.059 ; free physical = 81 ; free virtual = 342
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/ubuntu/lab1/lab1.srcs/sources_1/new/alu_temp.v:43]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/ubuntu/vvd-lab/lab1/lab1.srcs/sources_1/new/alu_temp.v:43]
 INFO: [Synth 8-802] inferred FSM for state register 'cur_state_reg_reg' in module 'fsm'
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg_reg' [/home/ubuntu/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v:59]
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg_reg' [/home/ubuntu/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg_reg' [/home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg_reg' [/home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v:64]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -102,9 +99,9 @@ WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg_r
                      S_2 |                              100 |                               10
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'cur_state_reg_reg' using encoding 'one-hot' in module 'fsm'
-WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg_reg' [/home/ubuntu/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v:59]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg_reg' [/home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v:64]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1909.672 ; gain = 361.059 ; free physical = 1413 ; free virtual = 2176
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 1918.090 ; gain = 369.059 ; free physical = 72 ; free virtual = 334
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -174,7 +171,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1909.672 ; gain = 361.059 ; free physical = 1403 ; free virtual = 2168
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1918.090 ; gain = 369.059 ; free physical = 60 ; free virtual = 324
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -186,13 +183,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1909.672 ; gain = 361.059 ; free physical = 1281 ; free virtual = 2047
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1918.090 ; gain = 369.059 ; free physical = 0 ; free virtual = 236
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1909.672 ; gain = 361.059 ; free physical = 1281 ; free virtual = 2046
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1918.090 ; gain = 369.059 ; free physical = 8 ; free virtual = 238
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -204,7 +201,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 1909.672 ; gain = 361.059 ; free physical = 1281 ; free virtual = 2046
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1918.090 ; gain = 369.059 ; free physical = 17 ; free virtual = 241
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -228,7 +225,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1909.672 ; gain = 361.059 ; free physical = 1281 ; free virtual = 2046
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1918.090 ; gain = 369.059 ; free physical = 18 ; free virtual = 242
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -241,7 +238,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1909.672 ; gain = 361.059 ; free physical = 1281 ; free virtual = 2046
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1918.090 ; gain = 369.059 ; free physical = 19 ; free virtual = 243
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -253,25 +250,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1909.672 ; gain = 361.059 ; free physical = 1281 ; free virtual = 2046
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1918.090 ; gain = 369.059 ; free physical = 18 ; free virtual = 242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1909.672 ; gain = 361.059 ; free physical = 1281 ; free virtual = 2046
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1918.090 ; gain = 369.059 ; free physical = 18 ; free virtual = 242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1909.672 ; gain = 361.059 ; free physical = 1281 ; free virtual = 2046
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1918.090 ; gain = 369.059 ; free physical = 18 ; free virtual = 242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1909.672 ; gain = 361.059 ; free physical = 1281 ; free virtual = 2046
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1918.090 ; gain = 369.059 ; free physical = 19 ; free virtual = 243
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -291,13 +288,12 @@ Report Cell Usage:
 |2     |CARRY4 |     2|
 |3     |LUT2   |     8|
 |4     |LUT3   |    14|
-|5     |LUT4   |    12|
-|6     |LUT5   |     1|
+|5     |LUT4   |     9|
+|6     |LUT5   |     4|
 |7     |FDRE   |    19|
-|8     |LDC    |     2|
-|9     |LDP    |     1|
-|10    |IBUF   |    10|
-|11    |OBUF   |     7|
+|8     |LD     |     3|
+|9     |IBUF   |    10|
+|10    |OBUF   |     7|
 +------+-------+------+
 
 Report Instance Areas: 
@@ -308,29 +304,28 @@ Report Instance Areas:
 |2     |  alu_ins |alu_temp |    16|
 +------+----------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1909.672 ; gain = 361.059 ; free physical = 1281 ; free virtual = 2046
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1918.090 ; gain = 369.059 ; free physical = 18 ; free virtual = 242
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1909.672 ; gain = 204.371 ; free physical = 1336 ; free virtual = 2101
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 1909.672 ; gain = 361.059 ; free physical = 1336 ; free virtual = 2101
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 1918.090 ; gain = 204.402 ; free physical = 73 ; free virtual = 297
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 1918.090 ; gain = 369.059 ; free physical = 73 ; free virtual = 297
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1922.547 ; gain = 0.000 ; free physical = 1283 ; free virtual = 2048
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1922.059 ; gain = 0.000 ; free physical = 17 ; free virtual = 241
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 3 instances were transformed.
-  LDC => LDCE: 2 instances
-  LDP => LDPE: 1 instances
+  LD => LDCE: 3 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-20 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+19 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1922.547 ; gain = 527.258 ; free physical = 1382 ; free virtual = 2147
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1922.547 ; gain = 0.000 ; free physical = 1382 ; free virtual = 2147
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 1922.059 ; gain = 516.414 ; free physical = 116 ; free virtual = 340
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1922.059 ; gain = 0.000 ; free physical = 115 ; free virtual = 339
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/ubuntu/lab1_fsm/lab1_fsm.runs/synth_1/fsm.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.runs/synth_1/fsm.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file fsm_utilization_synth.rpt -pb fsm_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Apr  2 18:02:22 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 14 14:34:19 2021...

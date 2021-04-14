@@ -2,6 +2,8 @@
 2019.1
 May 24 2019
 14:51:52
-/home/ubuntu/lab1/lab1.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
-/home/ubuntu/lab1/lab1.srcs/sim_1/new/test_bench.v,1617277087,verilog,,,,test_bench,,,,,,,,
-/home/ubuntu/lab1/lab1.srcs/sources_1/new/reg_inw_outw.v,1617276986,verilog,,/home/ubuntu/lab1/lab1.srcs/sim_1/new/test_bench.v,,reg_inw_outw,,,,,,,,
+/home/ubuntu/vvd-lab/lab1/lab1.sim/sim_1/behav/xsim/glbl.v,1617291358,verilog,,,,glbl,,,,,,,,
+/home/ubuntu/vvd-lab/lab1/lab1.srcs/sim_1/new/test_bench.v,1618405606,verilog,,,,test_bench,,,,,,,,
+/home/ubuntu/vvd-lab/lab1/lab1.srcs/sources_1/new/alu_6.v,1617291358,verilog,,/home/ubuntu/vvd-lab/lab1/lab1.srcs/sources_1/new/alu_temp.v,,alu_6,,,,,,,,
+/home/ubuntu/vvd-lab/lab1/lab1.srcs/sources_1/new/alu_temp.v,1617291358,verilog,,/home/ubuntu/vvd-lab/lab1/lab1.srcs/sources_1/new/reg_inw_outw.v,,alu_temp,,,,,,,,
+/home/ubuntu/vvd-lab/lab1/lab1.srcs/sources_1/new/reg_inw_outw.v,1617291358,verilog,,/home/ubuntu/vvd-lab/lab1/lab1.srcs/sim_1/new/test_bench.v,,reg_inw_outw,,,,,,,,

@@ -2,6 +2,7 @@
 2019.1
 May 24 2019
 14:51:52
-/home/ubuntu/lab1_fsm/lab1_fsm.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
-/home/ubuntu/lab1_fsm/lab1_fsm.srcs/sim_1/new/test_bench.v,1617381269,verilog,,,,test_bench,,,,,,,,
-/home/ubuntu/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v,1617381678,verilog,,/home/ubuntu/lab1_fsm/lab1_fsm.srcs/sim_1/new/test_bench.v,,fsm,,,,,,,,
+/home/ubuntu/vvd-lab/lab1/lab1.srcs/sources_1/new/alu_temp.v,1617291358,verilog,,/home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v,,alu_temp,,,,,,,,
+/home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.sim/sim_1/behav/xsim/glbl.v,1617387515,verilog,,,,glbl,,,,,,,,
+/home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.srcs/sim_1/new/test_bench.v,1618409948,verilog,,,,test_bench,,,,,,,,
+/home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v,1618410280,verilog,,/home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.srcs/sim_1/new/test_bench.v,,fsm,,,,,,,,

@@ -25,11 +25,17 @@ module test_bench(
     );
 reg clk;
 reg en;
+reg [1:0] sel;
 reg [5:0] x;
-wire [5:0] x_out;
+wire z;
+wire [5:0] y;
 integer i;
 
-
+alu_6 alu_ins
+(   
+    clk,en,
+    sel,x,z,y
+);
     
     
     
@@ -40,16 +46,24 @@ initial begin
 end
 
 initial begin
+    x = 6'b000000;
+    sel = 2'b00;
+    #20;
     en = 1;
-//    #100 en = 0;
-end
-
-initial begin
-    #1;
-    for(i=0;i<10000;i=i+1)
-    begin
-        x = i%64; #5;
-    end
+    #100;
+    en = 0;
+    x = 6'b000010;
+    sel = 2'b01;
+    #20;
+    en = 1;
+    #100;
+    en = 0;
+    x = 6'b000001;
+    sel = 2'b10;
+    #20;
+    en = 1;
+    #100;
+    en = 0;
 end
 
 

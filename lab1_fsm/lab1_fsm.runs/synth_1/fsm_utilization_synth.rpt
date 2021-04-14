@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Fri Apr  2 18:02:22 2021
+| Date         : Wed Apr 14 14:34:19 2021
 | Host         : VM2639-zhou-vivado running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_utilization -file fsm_utilization_synth.rpt -pb fsm_utilization_synth.pb
 | Design       : fsm
@@ -54,8 +54,8 @@ Table of Contents
 | 0     |            _ |         Set |            - |
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
-| 1     |          Yes |           - |          Set |
-| 2     |          Yes |           - |        Reset |
+| 0     |          Yes |           - |          Set |
+| 3     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 19    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -148,14 +148,13 @@ Table of Contents
 +----------+------+---------------------+
 | FDRE     |   19 |        Flop & Latch |
 | LUT3     |   14 |                 LUT |
-| LUT4     |   12 |                 LUT |
 | IBUF     |   10 |                  IO |
+| LUT4     |    9 |                 LUT |
 | LUT2     |    8 |                 LUT |
 | OBUF     |    7 |                  IO |
-| LDCE     |    2 |        Flop & Latch |
+| LUT5     |    4 |                 LUT |
+| LDCE     |    3 |        Flop & Latch |
 | CARRY4   |    2 |          CarryLogic |
-| LUT5     |    1 |                 LUT |
-| LDPE     |    1 |        Flop & Latch |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 

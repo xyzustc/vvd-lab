@@ -17,7 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache ./.Xil/Vivado-277396-VM2639-zhou-vivado/incrSyn
+set_param synth.incrementalSynthesisCache ./.Xil/Vivado-113177-VM2639-zhou-vivado/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
@@ -25,15 +25,15 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir /home/ubuntu/lab1_fsm/lab1_fsm.cache/wt [current_project]
-set_property parent.project_path /home/ubuntu/lab1_fsm/lab1_fsm.xpr [current_project]
+set_property webtalk.parent_dir /home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.cache/wt [current_project]
+set_property parent.project_path /home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo /home/ubuntu/lab1_fsm/lab1_fsm.cache/ip [current_project]
+set_property ip_output_repo /home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  /home/ubuntu/lab1/lab1.srcs/sources_1/new/alu_temp.v
-  /home/ubuntu/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v
+  /home/ubuntu/vvd-lab/lab1/lab1.srcs/sources_1/new/alu_temp.v
+  /home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.srcs/sources_1/new/fsm.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -43,8 +43,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/ubuntu/lab1_fsm/lab1_fsm.srcs/constrs_1/new/io.xdc
-set_property used_in_implementation false [get_files /home/ubuntu/lab1_fsm/lab1_fsm.srcs/constrs_1/new/io.xdc]
+read_xdc /home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.srcs/constrs_1/new/io.xdc
+set_property used_in_implementation false [get_files /home/ubuntu/vvd-lab/lab1_fsm/lab1_fsm.srcs/constrs_1/new/io.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

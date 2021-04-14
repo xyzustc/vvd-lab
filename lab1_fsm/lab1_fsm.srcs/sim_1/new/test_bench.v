@@ -25,10 +25,9 @@ module test_bench(
     );
 reg clk;
 reg en;
+reg [6:0] d;
 reg rst;
-wire [1:0] out;
-wire en_wire;
-integer i;
+wire [6:0] f;
     
     
 initial begin
@@ -37,35 +36,48 @@ initial begin
     #5 clk = ~clk;
 end
 
-fsm test(clk,en,rst,out,en_wire);
-
 initial begin
-    #102
-    en = 0;
-    forever
-    #100 en = ~en;
-end
-
-initial begin
+    rst = 1;
+    #10;
     rst = 0;
-    forever
-    begin
-    #500 rst = ~rst;
-//    #100 rst = ~rst;
-//    #100 rst = ~rst;
-//    #100 rst = ~rst;
-    end
 end
 
-//initial begin
-//    #1;
-//    for(i=20;i<50;i=i+1)
-//    begin
-//        en = 1; #i;
-//        en = 0; #i;
-//    end
-//end
+fsm fsm_ins(clk,en,d,rst,f);
 
+initial begin
+    en=0;
+    d = 6'b0000001;
+    #200;
+    en = 1;
+    #200;
+    en = 0;
+    #100;
+    d = 6'b0000010;
+    #200;
+    en = 1;
+    #200;
+    en = ~en;
+    #200;
+    en = ~en;
+    #200;
+    en = ~en;
+    #200;
+    en = ~en;
+    #200;
+    en = ~en;
+    #200;
+    en = ~en;
+    #200;
+    en = ~en;
+    #200;
+    en = ~en;
+    #200;
+    en = ~en;
+    #200;
+    en = ~en;
+    #200;
+    en = ~en;
+end
 
 
 endmodule
