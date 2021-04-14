@@ -51,12 +51,46 @@ module test_bench(
     initial begin
         enq = 0;
         deq = 0;
+        #4000;
         #250 enq = ~enq;
         #50 enq = ~enq;
-        #200;
+        #200;#4000;#400000;
         #250 enq = ~enq;
         #50 enq = ~enq;
-        #200;
+        #200;#4000;#400000;
+        #250 enq = ~enq;
+        #50 enq = ~enq;
+        #200;#4000;#400000;
+        #250 enq = ~enq;
+        #50 enq = ~enq;
+        #200;#4000;#400000;
+        #250 enq = ~enq;
+        #50 enq = ~enq;
+        #200;#4000;#400000;
+        #250 enq = ~enq;
+        #50 enq = ~enq;
+        #200;#4000;#400000;
+        #250 enq = ~enq;
+        #50 enq = ~enq;
+        #200;#4000;#400000;
+        #250 enq = ~enq;
+        #50 enq = ~enq;
+        #200;#4000;#400000;
+        #250 enq = ~enq;
+        #50 enq = ~enq;
+        #200;#4000;#400000;       
+        #250 deq = ~deq;
+        #50 deq = ~deq;
+        #200;#4000;#400000;
+        #250 deq = ~deq;
+        #50 deq = ~deq;
+        #200;#4000;#400000;
+        #250 deq = ~deq;
+        #50 deq = ~deq;
+        #200;#4000;#400000;
+        #250 deq = ~deq;
+        #50 deq = ~deq;
+        #200;#4000;
     end
     
     initial begin
@@ -65,7 +99,6 @@ module test_bench(
         in = 0;
         #500;
         in = 2;
-        
     end
     
     

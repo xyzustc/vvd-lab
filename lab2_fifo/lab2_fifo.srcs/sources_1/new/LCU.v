@@ -47,17 +47,7 @@ assign enq_wire = enq_r1 & (~enq_r2);
 assign deq_wire = deq_r1 & (~deq_r2);
 
 reg [7:0] rstate;
-//reg ri [0:7];
-//wire r0,r1,r2,r3,r4,r5,r6,r7;
-//wire [7:0] ri_wire;
-//assign r0=ri[0];
-//assign r1=ri[1];
-//assign r2=ri[2];
-//assign r3=ri[3];
-//assign r4=ri[4];
-//assign r5=ri[5];
-//assign r6=ri[6];
-//assign r7=ri[7];
+
 
 reg [2:0] head;
 reg [2:0] tail;
@@ -95,7 +85,7 @@ reg [7:0] head_and;
 always@(*)
 begin
     case(head) 
-        3'b000: head_and = ~8'b0000_0000;
+        3'b000: head_and = ~8'b0000_0001;
         3'b001: head_and = ~8'b0000_0010; 
         3'b010: head_and = ~8'b0000_0100;
         3'b011: head_and = ~8'b0000_1000;
@@ -138,10 +128,27 @@ end
 
 reg regfile_test;
 
-assign we = enq_wire;
+assign we = ~full&enq_wire;
 assign wa = tail;
+//reg [2:0] ra0_reg;
+//always@(posedge clk)
+//begin
+//    if(rst)
+//    ra0_reg <= 0;
+//    else if(deq_wire && ~enq && ~emp_reg)
+//    ra0_reg<=head;
+//end
+//assign ra0 = ra0_reg;
 assign ra0 = head;
-assign out = rd0;
+reg [3:0] rd0_reg;
+always@(posedge clk)
+begin
+    if(rst)
+    rd0_reg <= 0;
+    else if(deq_wire && ~enq && ~emp_reg)
+    rd0_reg<=rd0;
+end
+assign out = rd0_reg;
 assign valid = rstate;
 
 //always@(posedge clk)

@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Apr 14 01:30:00 2021
-# Process ID: 42626
+# Start of session at: Wed Apr 14 05:38:02 2021
+# Process ID: 89213
 # Current directory: /home/ubuntu/lab2_fifo/lab2_fifo.runs/impl_1
 # Command line: vivado -log fifo.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source fifo.tcl -notrace
 # Log file: /home/ubuntu/lab2_fifo/lab2_fifo.runs/impl_1/fifo.vdi

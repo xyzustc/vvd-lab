@@ -73,7 +73,7 @@ module fifo(
     //SDU
     //
     SDU sdu_ins(
-    clk,rd1,valid,ra1,an,seg);
+    clk,rst,rd1,valid,ra1,an,seg);
     
     
     

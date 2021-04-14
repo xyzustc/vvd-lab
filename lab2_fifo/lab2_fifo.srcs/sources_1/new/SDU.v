@@ -22,6 +22,7 @@
 
 module SDU(
     input clk,
+    input rst,
     input [3:0] rd1,
     input [7:0] valid,
     output [2:0] ra1,
@@ -29,9 +30,36 @@ module SDU(
     output [3:0] seg_data
     );
     
+    parameter WIDTH=7;
+    parameter N=200;
+    reg clk_out;
+    reg [WIDTH:0]counter;
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            // reset
+            counter <= 0;
+        end
+        else if (counter == N-1) begin
+            counter <= 0;
+        end
+        else begin
+            counter <= counter + 1;
+        end
+    end
+    
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            // reset
+            clk_out <= 0;
+        end
+        else if (counter == N-1) begin
+            clk_out <= !clk_out;
+        end
+    end
+    
     
     reg [7:0] mask_reg;
-    always@(posedge clk)
+    always@(posedge clk_out)
     begin
         case(mask_reg)
         8'b1000_0000: mask_reg<=8'b0000_0001;
@@ -57,14 +85,15 @@ module SDU(
         8'b0010_0000: loop_a=3'b101;
         8'b0100_0000: loop_a=3'b110;
         8'b1000_0000: loop_a=3'b111;
-        default: loop_a=3'b000;
         endcase
     end
 
     reg [2:0] an_sel_reg;
     always@(posedge clk)
     begin
-        if(valid&mask_reg)
+        if(rst)
+        an_sel_reg<=3'b000;
+        else if(valid&mask_reg)
         an_sel_reg<=loop_a;
 //        else//
 //        an_sel_reg<=3'bxxx;//
