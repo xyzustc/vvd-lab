@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_bench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_bench" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="571000001fs"></ZoomEndTime>
+      <Cursor1Time time="165000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="108"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="51" />
+   <wvobject type="logic" fp_name="/test_bench/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/enq">
+      <obj_property name="ElementShortName">enq</obj_property>
+      <obj_property name="ObjectShortName">enq</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/deq">
+      <obj_property name="ElementShortName">deq</obj_property>
+      <obj_property name="ObjectShortName">deq</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/in">
+      <obj_property name="ElementShortName">in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">in[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/out">
+      <obj_property name="ElementShortName">out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">out[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/emp">
+      <obj_property name="ElementShortName">emp</obj_property>
+      <obj_property name="ObjectShortName">emp</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/full">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/an">
+      <obj_property name="ElementShortName">an[2:0]</obj_property>
+      <obj_property name="ObjectShortName">an[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/seg">
+      <obj_property name="ElementShortName">seg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">seg[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/fifo_ins/lcu_ins/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/fifo_ins/lcu_ins/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/fifo_ins/lcu_ins/enq">
+      <obj_property name="ElementShortName">enq</obj_property>
+      <obj_property name="ObjectShortName">enq</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/lcu_ins/in">
+      <obj_property name="ElementShortName">in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">in[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/fifo_ins/lcu_ins/deq">
+      <obj_property name="ElementShortName">deq</obj_property>
+      <obj_property name="ObjectShortName">deq</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/lcu_ins/out">
+      <obj_property name="ElementShortName">out[3:0]</obj_property>
+      <obj_property name="ObjectShortName">out[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/fifo_ins/lcu_ins/emp">
+      <obj_property name="ElementShortName">emp</obj_property>
+      <obj_property name="ObjectShortName">emp</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/fifo_ins/lcu_ins/full">
+      <obj_property name="ElementShortName">full</obj_property>
+      <obj_property name="ObjectShortName">full</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/lcu_ins/ra0">
+      <obj_property name="ElementShortName">ra0[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ra0[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/lcu_ins/rd0">
+      <obj_property name="ElementShortName">rd0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rd0[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/lcu_ins/wa">
+      <obj_property name="ElementShortName">wa[2:0]</obj_property>
+      <obj_property name="ObjectShortName">wa[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/lcu_ins/wd">
+      <obj_property name="ElementShortName">wd[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wd[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/fifo_ins/lcu_ins/we">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/lcu_ins/rstate">
+      <obj_property name="ElementShortName">rstate[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rstate[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/lcu_ins/head">
+      <obj_property name="ElementShortName">head[2:0]</obj_property>
+      <obj_property name="ObjectShortName">head[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/lcu_ins/tail">
+      <obj_property name="ElementShortName">tail[2:0]</obj_property>
+      <obj_property name="ObjectShortName">tail[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/fifo_ins/lcu_ins/full_reg">
+      <obj_property name="ElementShortName">full_reg</obj_property>
+      <obj_property name="ObjectShortName">full_reg</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/fifo_ins/lcu_ins/emp_reg">
+      <obj_property name="ElementShortName">emp_reg</obj_property>
+      <obj_property name="ObjectShortName">emp_reg</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/lcu_ins/tail_or">
+      <obj_property name="ElementShortName">tail_or[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tail_or[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/lcu_ins/head_and">
+      <obj_property name="ElementShortName">head_and[7:0]</obj_property>
+      <obj_property name="ObjectShortName">head_and[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/fifo_ins/lcu_ins/we_reg">
+      <obj_property name="ElementShortName">we_reg</obj_property>
+      <obj_property name="ObjectShortName">we_reg</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/fifo_ins/lcu_ins/regfile_test">
+      <obj_property name="ElementShortName">regfile_test</obj_property>
+      <obj_property name="ObjectShortName">regfile_test</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/fifo_ins/reg_ins/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/reg_ins/ra0">
+      <obj_property name="ElementShortName">ra0[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ra0[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/reg_ins/rd0">
+      <obj_property name="ElementShortName">rd0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rd0[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/reg_ins/ra1">
+      <obj_property name="ElementShortName">ra1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ra1[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/reg_ins/rd1">
+      <obj_property name="ElementShortName">rd1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rd1[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/reg_ins/wa">
+      <obj_property name="ElementShortName">wa[2:0]</obj_property>
+      <obj_property name="ObjectShortName">wa[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/fifo_ins/reg_ins/we">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/reg_ins/wd">
+      <obj_property name="ElementShortName">wd[3:0]</obj_property>
+      <obj_property name="ObjectShortName">wd[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/reg_ins/regfile">
+      <obj_property name="ElementShortName">regfile[0:7][3:0]</obj_property>
+      <obj_property name="ObjectShortName">regfile[0:7][3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/reg_ins/WIDTH">
+      <obj_property name="ElementShortName">WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/test_bench/fifo_ins/sdu_ins/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/sdu_ins/rd1">
+      <obj_property name="ElementShortName">rd1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rd1[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/sdu_ins/valid">
+      <obj_property name="ElementShortName">valid[7:0]</obj_property>
+      <obj_property name="ObjectShortName">valid[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/sdu_ins/ra1">
+      <obj_property name="ElementShortName">ra1[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ra1[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/sdu_ins/an_sel">
+      <obj_property name="ElementShortName">an_sel[2:0]</obj_property>
+      <obj_property name="ObjectShortName">an_sel[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/sdu_ins/seg_data">
+      <obj_property name="ElementShortName">seg_data[3:0]</obj_property>
+      <obj_property name="ObjectShortName">seg_data[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/sdu_ins/mask_reg">
+      <obj_property name="ElementShortName">mask_reg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">mask_reg[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/sdu_ins/loop_a">
+      <obj_property name="ElementShortName">loop_a[2:0]</obj_property>
+      <obj_property name="ObjectShortName">loop_a[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/test_bench/fifo_ins/sdu_ins/an_sel_reg">
+      <obj_property name="ElementShortName">an_sel_reg[2:0]</obj_property>
+      <obj_property name="ObjectShortName">an_sel_reg[2:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,10 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/ubuntu/lab2_fifo/lab2_fifo.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/ubuntu/lab2_fifo/lab2_fifo.srcs/sim_1/new/test_bench.v,1618332313,verilog,,,,test_bench,,,,,,,,
+/home/ubuntu/lab2_fifo/lab2_fifo.srcs/sources_1/new/LCU.v,1618320283,verilog,,/home/ubuntu/lab2_fifo/lab2_fifo.srcs/sources_1/new/reg4b_8d.v,,LCU,,,,,,,,
+/home/ubuntu/lab2_fifo/lab2_fifo.srcs/sources_1/new/SDU.v,1618362949,verilog,,/home/ubuntu/lab2_fifo/lab2_fifo.srcs/sources_1/new/fifo.v,,SDU,,,,,,,,
+/home/ubuntu/lab2_fifo/lab2_fifo.srcs/sources_1/new/fifo.v,1618326945,verilog,,/home/ubuntu/lab2_fifo/lab2_fifo.srcs/sim_1/new/test_bench.v,,fifo,,,,,,,,
+/home/ubuntu/lab2_fifo/lab2_fifo.srcs/sources_1/new/reg4b_8d.v,1618311687,verilog,,/home/ubuntu/lab2_fifo/lab2_fifo.srcs/sources_1/new/SDU.v,,reg4b_8d,,,,,,,,
