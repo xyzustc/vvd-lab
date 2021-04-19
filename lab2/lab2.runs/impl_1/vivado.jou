@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Apr 19 09:48:05 2021
+# Process ID: 135963
+# Current directory: /home/ubuntu/lab2/lab2.runs/impl_1
+# Command line: vivado -log RegFile.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source RegFile.tcl -notrace
+# Log file: /home/ubuntu/lab2/lab2.runs/impl_1/RegFile.vdi
+# Journal file: /home/ubuntu/lab2/lab2.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source RegFile.tcl -notrace

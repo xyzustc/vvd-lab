@@ -1,0 +1,7 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/ubuntu/lab2/lab2.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/ubuntu/lab2/lab2.srcs/sim_1/new/test_bench.v,1617883593,verilog,,,,test_bench,,,,,,,,
+/home/ubuntu/lab2/lab2.srcs/sources_1/new/RegFile.v,1617881007,verilog,,/home/ubuntu/lab2/lab2.srcs/sim_1/new/test_bench.v,,RegFile,,,,,,,,

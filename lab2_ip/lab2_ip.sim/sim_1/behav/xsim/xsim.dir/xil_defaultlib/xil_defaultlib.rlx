@@ -1,0 +1,8 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/ubuntu/lab2_ip/lab2_ip.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/ubuntu/lab2_ip/lab2_ip.srcs/sim_1/new/test_bench.v,1618844277,verilog,,,,test_bench,,,,,,,,
+/home/ubuntu/lab2_ip/lab2_ip.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,1617885623,verilog,,/home/ubuntu/lab2_ip/lab2_ip.srcs/sim_1/new/test_bench.v,,blk_mem_gen_0,,,,,,,,
+/home/ubuntu/lab2_ip/lab2_ip.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1617885230,verilog,,/home/ubuntu/lab2_ip/lab2_ip.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v,,dist_mem_gen_0,,,,,,,,
