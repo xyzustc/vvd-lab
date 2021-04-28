@@ -1,0 +1,19 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/vlab/vivado/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto a823a68f7a984c7598a78ae3d7c5abd2 --incr --debug typical --relax --mt 8 -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot cpu_behav xil_defaultlib.cpu xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'we' [/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/cpu.v:188]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_gen_0
+Compiling module xil_defaultlib.RegFile
+Compiling module xil_defaultlib.alu_temp
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_gen_1
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot cpu_behav

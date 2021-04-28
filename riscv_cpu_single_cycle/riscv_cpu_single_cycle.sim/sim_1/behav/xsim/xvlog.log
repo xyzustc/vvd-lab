@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/RegFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/alu_temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_temp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/cpu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
