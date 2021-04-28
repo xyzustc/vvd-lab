@@ -89,13 +89,13 @@ always @* begin
 end
 
 //写外设端口
-always @(posedge clk, posedge rst) begin
+always @(posedge clk_cpu, posedge rst) begin //self-define cpu -> clk_cpu
 if (rst) begin
   out0_r <= 5'h1f;
   out1_r <= 32'h1234_5678;
   ready_r <= 1'b1;
 end
-else if (io_we)
+else if (io_we)//io_we来了数码管就输出了,不需要sw完成,在指示sw的时候就显示了,(因为clk上升沿很密集)
   case (io_addr)
     8'h00: out0_r <= io_dout[4:0];
     8'h04: ready_r <= io_dout[0];

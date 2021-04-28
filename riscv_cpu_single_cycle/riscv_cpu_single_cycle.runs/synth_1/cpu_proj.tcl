@@ -37,7 +37,7 @@ read_verilog -library xil_defaultlib {
   /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/RegFile.v
   /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/alu_temp.v
   /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/cpu.v
-  /home/ubuntu/vvd-lab/pdu_1cycle.v
+  /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/pdu_1cycle.v
   /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/cpu_proj.v
 }
 read_ip -quiet /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci

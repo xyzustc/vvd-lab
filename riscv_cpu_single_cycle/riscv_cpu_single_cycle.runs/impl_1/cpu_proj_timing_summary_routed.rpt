@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Wed Apr 28 08:05:57 2021
+| Date         : Wed Apr 28 15:16:24 2021
 | Host         : VM2639-zhou-vivado running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_timing_summary -max_paths 10 -file cpu_proj_timing_summary_routed.rpt -pb cpu_proj_timing_summary_routed.pb -rpx cpu_proj_timing_summary_routed.rpx -warn_on_violation
 | Design       : cpu_proj
@@ -69,7 +69,7 @@ Table of Contents
 
  There are 8 register/latch pins with no clock driven by root clock pin: cpu_inst/pc_r_reg[9]/Q (HIGH)
 
- There are 560 register/latch pins with no clock driven by root clock pin: pdu_inst/clk_cpu_r_reg/Q (HIGH)
+ There are 598 register/latch pins with no clock driven by root clock pin: pdu_inst/clk_cpu_r_reg/Q (HIGH)
 
 
 2. checking constant_clock
@@ -84,7 +84,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 4360 pins that are not constrained for maximum delay. (HIGH)
+ There are 4474 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -143,7 +143,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      7.074        0.000                      0                   25        0.209        0.000                      0                   25        4.500        0.000                       0                    77  
+      7.074        0.000                      0                   25        0.209        0.000                      0                   25        4.500        0.000                       0                    39  
 
 
 All user specified timing constraints are met.
@@ -166,7 +166,7 @@ sys_clk_pin  {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-sys_clk_pin         7.074        0.000                      0                   25        0.209        0.000                      0                   25        4.500        0.000                       0                    77  
+sys_clk_pin         7.074        0.000                      0                   25        0.209        0.000                      0                   25        4.500        0.000                       0                    39  
 
 
 ------------------------------------------------------------------------------------------------
@@ -234,7 +234,7 @@ Slack (MET) :             7.074ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.629     5.231    pdu_inst/CLK
+                         net (fo=38, routed)          1.629     5.231    pdu_inst/CLK
     SLICE_X9Y107         FDRE                                         r  pdu_inst/step_r_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y107         FDRE (Prop_fdre_C_Q)         0.456     5.687 f  pdu_inst/step_r_reg/Q
@@ -253,7 +253,7 @@ Slack (MET) :             7.074ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    13.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.508    14.930    pdu_inst/CLK
+                         net (fo=38, routed)          1.508    14.930    pdu_inst/CLK
     SLICE_X9Y103         FDCE                                         r  pdu_inst/check_r_reg[1]/C
                          clock pessimism              0.277    15.207    
                          clock uncertainty           -0.035    15.172    
@@ -293,7 +293,7 @@ Slack (MET) :             7.687ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.695     5.297    pdu_inst/CLK
+                         net (fo=38, routed)          1.695     5.297    pdu_inst/CLK
     SLICE_X3Y121         FDCE                                         r  pdu_inst/cnt_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y121         FDCE (Prop_fdce_C_Q)         0.456     5.753 r  pdu_inst/cnt_reg[1]/Q
@@ -323,7 +323,7 @@ Slack (MET) :             7.687ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    13.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.572    14.994    pdu_inst/CLK
+                         net (fo=38, routed)          1.572    14.994    pdu_inst/CLK
     SLICE_X3Y125         FDCE                                         r  pdu_inst/cnt_reg[17]/C
                          clock pessimism              0.259    15.253    
                          clock uncertainty           -0.035    15.218    
@@ -363,7 +363,7 @@ Slack (MET) :             7.708ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.695     5.297    pdu_inst/CLK
+                         net (fo=38, routed)          1.695     5.297    pdu_inst/CLK
     SLICE_X3Y121         FDCE                                         r  pdu_inst/cnt_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y121         FDCE (Prop_fdce_C_Q)         0.456     5.753 r  pdu_inst/cnt_reg[1]/Q
@@ -393,7 +393,7 @@ Slack (MET) :             7.708ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    13.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.572    14.994    pdu_inst/CLK
+                         net (fo=38, routed)          1.572    14.994    pdu_inst/CLK
     SLICE_X3Y125         FDCE                                         r  pdu_inst/cnt_reg[19]/C
                          clock pessimism              0.259    15.253    
                          clock uncertainty           -0.035    15.218    
@@ -433,7 +433,7 @@ Slack (MET) :             7.782ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.695     5.297    pdu_inst/CLK
+                         net (fo=38, routed)          1.695     5.297    pdu_inst/CLK
     SLICE_X3Y121         FDCE                                         r  pdu_inst/cnt_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y121         FDCE (Prop_fdce_C_Q)         0.456     5.753 r  pdu_inst/cnt_reg[1]/Q
@@ -463,7 +463,7 @@ Slack (MET) :             7.782ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    13.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.572    14.994    pdu_inst/CLK
+                         net (fo=38, routed)          1.572    14.994    pdu_inst/CLK
     SLICE_X3Y125         FDCE                                         r  pdu_inst/cnt_reg[18]/C
                          clock pessimism              0.259    15.253    
                          clock uncertainty           -0.035    15.218    
@@ -503,7 +503,7 @@ Slack (MET) :             7.798ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.695     5.297    pdu_inst/CLK
+                         net (fo=38, routed)          1.695     5.297    pdu_inst/CLK
     SLICE_X3Y121         FDCE                                         r  pdu_inst/cnt_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y121         FDCE (Prop_fdce_C_Q)         0.456     5.753 r  pdu_inst/cnt_reg[1]/Q
@@ -533,7 +533,7 @@ Slack (MET) :             7.798ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    13.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.572    14.994    pdu_inst/CLK
+                         net (fo=38, routed)          1.572    14.994    pdu_inst/CLK
     SLICE_X3Y125         FDCE                                         r  pdu_inst/cnt_reg[16]/C
                          clock pessimism              0.259    15.253    
                          clock uncertainty           -0.035    15.218    
@@ -573,7 +573,7 @@ Slack (MET) :             7.824ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.629     5.231    pdu_inst/CLK
+                         net (fo=38, routed)          1.629     5.231    pdu_inst/CLK
     SLICE_X9Y107         FDRE                                         r  pdu_inst/step_r_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y107         FDRE (Prop_fdre_C_Q)         0.456     5.687 r  pdu_inst/step_r_reg/Q
@@ -590,7 +590,7 @@ Slack (MET) :             7.824ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    13.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.508    14.930    pdu_inst/CLK
+                         net (fo=38, routed)          1.508    14.930    pdu_inst/CLK
     SLICE_X9Y103         FDCE                                         r  pdu_inst/clk_cpu_r_reg/C
                          clock pessimism              0.277    15.207    
                          clock uncertainty           -0.035    15.172    
@@ -630,7 +630,7 @@ Slack (MET) :             7.826ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.695     5.297    pdu_inst/CLK
+                         net (fo=38, routed)          1.695     5.297    pdu_inst/CLK
     SLICE_X3Y121         FDCE                                         r  pdu_inst/cnt_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y121         FDCE (Prop_fdce_C_Q)         0.456     5.753 r  pdu_inst/cnt_reg[1]/Q
@@ -657,7 +657,7 @@ Slack (MET) :             7.826ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    13.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.572    14.994    pdu_inst/CLK
+                         net (fo=38, routed)          1.572    14.994    pdu_inst/CLK
     SLICE_X3Y124         FDCE                                         r  pdu_inst/cnt_reg[13]/C
                          clock pessimism              0.275    15.269    
                          clock uncertainty           -0.035    15.234    
@@ -697,7 +697,7 @@ Slack (MET) :             7.847ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.695     5.297    pdu_inst/CLK
+                         net (fo=38, routed)          1.695     5.297    pdu_inst/CLK
     SLICE_X3Y121         FDCE                                         r  pdu_inst/cnt_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y121         FDCE (Prop_fdce_C_Q)         0.456     5.753 r  pdu_inst/cnt_reg[1]/Q
@@ -724,7 +724,7 @@ Slack (MET) :             7.847ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    13.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.572    14.994    pdu_inst/CLK
+                         net (fo=38, routed)          1.572    14.994    pdu_inst/CLK
     SLICE_X3Y124         FDCE                                         r  pdu_inst/cnt_reg[15]/C
                          clock pessimism              0.275    15.269    
                          clock uncertainty           -0.035    15.234    
@@ -764,7 +764,7 @@ Slack (MET) :             7.921ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.695     5.297    pdu_inst/CLK
+                         net (fo=38, routed)          1.695     5.297    pdu_inst/CLK
     SLICE_X3Y121         FDCE                                         r  pdu_inst/cnt_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y121         FDCE (Prop_fdce_C_Q)         0.456     5.753 r  pdu_inst/cnt_reg[1]/Q
@@ -791,7 +791,7 @@ Slack (MET) :             7.921ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    13.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.572    14.994    pdu_inst/CLK
+                         net (fo=38, routed)          1.572    14.994    pdu_inst/CLK
     SLICE_X3Y124         FDCE                                         r  pdu_inst/cnt_reg[14]/C
                          clock pessimism              0.275    15.269    
                          clock uncertainty           -0.035    15.234    
@@ -831,7 +831,7 @@ Slack (MET) :             7.937ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.695     5.297    pdu_inst/CLK
+                         net (fo=38, routed)          1.695     5.297    pdu_inst/CLK
     SLICE_X3Y121         FDCE                                         r  pdu_inst/cnt_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y121         FDCE (Prop_fdce_C_Q)         0.456     5.753 r  pdu_inst/cnt_reg[1]/Q
@@ -858,7 +858,7 @@ Slack (MET) :             7.937ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    13.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          1.572    14.994    pdu_inst/CLK
+                         net (fo=38, routed)          1.572    14.994    pdu_inst/CLK
     SLICE_X3Y124         FDCE                                         r  pdu_inst/cnt_reg[12]/C
                          clock pessimism              0.275    15.269    
                          clock uncertainty           -0.035    15.234    
@@ -899,7 +899,7 @@ Slack (MET) :             0.209ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.644     0.894    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.569     1.488    pdu_inst/CLK
+                         net (fo=38, routed)          0.569     1.488    pdu_inst/CLK
     SLICE_X11Y103        FDRE                                         r  pdu_inst/valid_2r_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X11Y103        FDRE (Prop_fdre_C_Q)         0.141     1.629 r  pdu_inst/valid_2r_reg/Q
@@ -916,7 +916,7 @@ Slack (MET) :             0.209ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.840     2.005    pdu_inst/CLK
+                         net (fo=38, routed)          0.840     2.005    pdu_inst/CLK
     SLICE_X9Y103         FDCE                                         r  pdu_inst/check_r_reg[1]/C
                          clock pessimism             -0.479     1.525    
     SLICE_X9Y103         FDCE (Hold_fdce_C_D)         0.092     1.617    pdu_inst/check_r_reg[1]
@@ -950,7 +950,7 @@ Slack (MET) :             0.222ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.644     0.894    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.568     1.487    pdu_inst/CLK
+                         net (fo=38, routed)          0.568     1.487    pdu_inst/CLK
     SLICE_X9Y107         FDRE                                         r  pdu_inst/step_r_reg/C
   -------------------------------------------------------------------    -------------------
     SLICE_X9Y107         FDRE (Prop_fdre_C_Q)         0.141     1.628 r  pdu_inst/step_r_reg/Q
@@ -965,7 +965,7 @@ Slack (MET) :             0.222ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.840     2.005    pdu_inst/CLK
+                         net (fo=38, routed)          0.840     2.005    pdu_inst/CLK
     SLICE_X11Y103        FDRE                                         r  pdu_inst/step_2r_reg/C
                          clock pessimism             -0.479     1.525    
     SLICE_X11Y103        FDRE (Hold_fdre_C_D)         0.070     1.595    pdu_inst/step_2r_reg
@@ -999,7 +999,7 @@ Slack (MET) :             0.252ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.644     0.894    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.586     1.505    pdu_inst/CLK
+                         net (fo=38, routed)          0.586     1.505    pdu_inst/CLK
     SLICE_X3Y123         FDCE                                         r  pdu_inst/cnt_reg[11]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y123         FDCE (Prop_fdce_C_Q)         0.141     1.646 r  pdu_inst/cnt_reg[11]/Q
@@ -1017,7 +1017,7 @@ Slack (MET) :             0.252ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.855     2.021    pdu_inst/CLK
+                         net (fo=38, routed)          0.855     2.021    pdu_inst/CLK
     SLICE_X3Y123         FDCE                                         r  pdu_inst/cnt_reg[11]/C
                          clock pessimism             -0.515     1.505    
     SLICE_X3Y123         FDCE (Hold_fdce_C_D)         0.105     1.610    pdu_inst/cnt_reg[11]
@@ -1051,7 +1051,7 @@ Slack (MET) :             0.252ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.644     0.894    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.585     1.504    pdu_inst/CLK
+                         net (fo=38, routed)          0.585     1.504    pdu_inst/CLK
     SLICE_X3Y124         FDCE                                         r  pdu_inst/cnt_reg[15]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y124         FDCE (Prop_fdce_C_Q)         0.141     1.645 r  pdu_inst/cnt_reg[15]/Q
@@ -1069,7 +1069,7 @@ Slack (MET) :             0.252ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.855     2.020    pdu_inst/CLK
+                         net (fo=38, routed)          0.855     2.020    pdu_inst/CLK
     SLICE_X3Y124         FDCE                                         r  pdu_inst/cnt_reg[15]/C
                          clock pessimism             -0.515     1.504    
     SLICE_X3Y124         FDCE (Hold_fdce_C_D)         0.105     1.609    pdu_inst/cnt_reg[15]
@@ -1103,7 +1103,7 @@ Slack (MET) :             0.252ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.644     0.894    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.588     1.507    pdu_inst/CLK
+                         net (fo=38, routed)          0.588     1.507    pdu_inst/CLK
     SLICE_X3Y121         FDCE                                         r  pdu_inst/cnt_reg[3]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y121         FDCE (Prop_fdce_C_Q)         0.141     1.648 r  pdu_inst/cnt_reg[3]/Q
@@ -1121,7 +1121,7 @@ Slack (MET) :             0.252ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.859     2.024    pdu_inst/CLK
+                         net (fo=38, routed)          0.859     2.024    pdu_inst/CLK
     SLICE_X3Y121         FDCE                                         r  pdu_inst/cnt_reg[3]/C
                          clock pessimism             -0.516     1.507    
     SLICE_X3Y121         FDCE (Hold_fdce_C_D)         0.105     1.612    pdu_inst/cnt_reg[3]
@@ -1155,7 +1155,7 @@ Slack (MET) :             0.252ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.644     0.894    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.588     1.507    pdu_inst/CLK
+                         net (fo=38, routed)          0.588     1.507    pdu_inst/CLK
     SLICE_X3Y122         FDCE                                         r  pdu_inst/cnt_reg[7]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y122         FDCE (Prop_fdce_C_Q)         0.141     1.648 r  pdu_inst/cnt_reg[7]/Q
@@ -1173,7 +1173,7 @@ Slack (MET) :             0.252ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.858     2.023    pdu_inst/CLK
+                         net (fo=38, routed)          0.858     2.023    pdu_inst/CLK
     SLICE_X3Y122         FDCE                                         r  pdu_inst/cnt_reg[7]/C
                          clock pessimism             -0.515     1.507    
     SLICE_X3Y122         FDCE (Hold_fdce_C_D)         0.105     1.612    pdu_inst/cnt_reg[7]
@@ -1207,7 +1207,7 @@ Slack (MET) :             0.256ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.644     0.894    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.585     1.504    pdu_inst/CLK
+                         net (fo=38, routed)          0.585     1.504    pdu_inst/CLK
     SLICE_X3Y124         FDCE                                         r  pdu_inst/cnt_reg[12]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y124         FDCE (Prop_fdce_C_Q)         0.141     1.645 r  pdu_inst/cnt_reg[12]/Q
@@ -1225,7 +1225,7 @@ Slack (MET) :             0.256ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.855     2.020    pdu_inst/CLK
+                         net (fo=38, routed)          0.855     2.020    pdu_inst/CLK
     SLICE_X3Y124         FDCE                                         r  pdu_inst/cnt_reg[12]/C
                          clock pessimism             -0.515     1.504    
     SLICE_X3Y124         FDCE (Hold_fdce_C_D)         0.105     1.609    pdu_inst/cnt_reg[12]
@@ -1259,7 +1259,7 @@ Slack (MET) :             0.256ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.644     0.894    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.585     1.504    pdu_inst/CLK
+                         net (fo=38, routed)          0.585     1.504    pdu_inst/CLK
     SLICE_X3Y125         FDCE                                         r  pdu_inst/cnt_reg[16]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y125         FDCE (Prop_fdce_C_Q)         0.141     1.645 r  pdu_inst/cnt_reg[16]/Q
@@ -1277,7 +1277,7 @@ Slack (MET) :             0.256ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.855     2.020    pdu_inst/CLK
+                         net (fo=38, routed)          0.855     2.020    pdu_inst/CLK
     SLICE_X3Y125         FDCE                                         r  pdu_inst/cnt_reg[16]/C
                          clock pessimism             -0.515     1.504    
     SLICE_X3Y125         FDCE (Hold_fdce_C_D)         0.105     1.609    pdu_inst/cnt_reg[16]
@@ -1311,7 +1311,7 @@ Slack (MET) :             0.256ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.644     0.894    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.588     1.507    pdu_inst/CLK
+                         net (fo=38, routed)          0.588     1.507    pdu_inst/CLK
     SLICE_X3Y122         FDCE                                         r  pdu_inst/cnt_reg[4]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y122         FDCE (Prop_fdce_C_Q)         0.141     1.648 r  pdu_inst/cnt_reg[4]/Q
@@ -1329,7 +1329,7 @@ Slack (MET) :             0.256ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.858     2.023    pdu_inst/CLK
+                         net (fo=38, routed)          0.858     2.023    pdu_inst/CLK
     SLICE_X3Y122         FDCE                                         r  pdu_inst/cnt_reg[4]/C
                          clock pessimism             -0.515     1.507    
     SLICE_X3Y122         FDCE (Hold_fdce_C_D)         0.105     1.612    pdu_inst/cnt_reg[4]
@@ -1363,7 +1363,7 @@ Slack (MET) :             0.256ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.644     0.894    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.586     1.505    pdu_inst/CLK
+                         net (fo=38, routed)          0.586     1.505    pdu_inst/CLK
     SLICE_X3Y123         FDCE                                         r  pdu_inst/cnt_reg[8]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X3Y123         FDCE (Prop_fdce_C_Q)         0.141     1.646 r  pdu_inst/cnt_reg[8]/Q
@@ -1381,7 +1381,7 @@ Slack (MET) :             0.256ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=76, routed)          0.855     2.021    pdu_inst/CLK
+                         net (fo=38, routed)          0.855     2.021    pdu_inst/CLK
     SLICE_X3Y123         FDCE                                         r  pdu_inst/cnt_reg[8]/C
                          clock pessimism             -0.515     1.505    
     SLICE_X3Y123         FDCE (Hold_fdce_C_D)         0.105     1.610    pdu_inst/cnt_reg[8]
@@ -1413,26 +1413,26 @@ Min Period        n/a     FDCE/C   n/a            1.000         10.000      9.00
 Min Period        n/a     FDCE/C   n/a            1.000         10.000      9.000      SLICE_X3Y124    pdu_inst/cnt_reg[12]/C
 Min Period        n/a     FDCE/C   n/a            1.000         10.000      9.000      SLICE_X3Y124    pdu_inst/cnt_reg[13]/C
 Min Period        n/a     FDCE/C   n/a            1.000         10.000      9.000      SLICE_X3Y124    pdu_inst/cnt_reg[14]/C
-Low Pulse Width   Slow    FDPE/C   n/a            0.500         5.000       4.500      SLICE_X3Y114    pdu_inst/out1_r_reg[25]/C
-Low Pulse Width   Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X4Y114    pdu_inst/out1_r_reg[29]/C
 Low Pulse Width   Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X9Y103    pdu_inst/check_r_reg[0]/C
 Low Pulse Width   Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X9Y103    pdu_inst/check_r_reg[1]/C
 Low Pulse Width   Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X9Y103    pdu_inst/clk_cpu_r_reg/C
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X3Y116    pdu_inst/in_r_reg[1]/C
 Low Pulse Width   Slow    FDRE/C   n/a            0.500         5.000       4.500      SLICE_X3Y116    pdu_inst/in_r_reg_rep[1]/C
-Low Pulse Width   Slow    FDPE/C   n/a            0.500         5.000       4.500      SLICE_X5Y108    pdu_inst/out1_r_reg[10]/C
-Low Pulse Width   Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X5Y108    pdu_inst/out1_r_reg[11]/C
-Low Pulse Width   Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X9Y110    pdu_inst/out1_r_reg[15]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X3Y123    pdu_inst/cnt_reg[10]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X3Y123    pdu_inst/cnt_reg[11]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X3Y123    pdu_inst/cnt_reg[8]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X3Y123    pdu_inst/cnt_reg[9]/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X9Y103    pdu_inst/check_r_reg[0]/C
 High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X3Y121    pdu_inst/cnt_reg[0]/C
 High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X3Y121    pdu_inst/cnt_reg[1]/C
 High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X3Y121    pdu_inst/cnt_reg[2]/C
 High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X3Y121    pdu_inst/cnt_reg[3]/C
-High Pulse Width  Slow    FDPE/C   n/a            0.500         5.000       4.500      SLICE_X4Y112    pdu_inst/out1_r_reg[21]/C
 High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X9Y103    pdu_inst/check_r_reg[0]/C
 High Pulse Width  Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X9Y103    pdu_inst/check_r_reg[0]/C
 High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X9Y103    pdu_inst/check_r_reg[1]/C
 High Pulse Width  Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X9Y103    pdu_inst/check_r_reg[1]/C
 High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X9Y103    pdu_inst/clk_cpu_r_reg/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X9Y103    pdu_inst/clk_cpu_r_reg/C
 
 
 

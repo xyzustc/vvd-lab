@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Wed Apr 28 08:05:55 2021
+| Date         : Wed Apr 28 15:16:23 2021
 | Host         : VM2639-zhou-vivado running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_methodology -file cpu_proj_methodology_drc_routed.rpt -pb cpu_proj_methodology_drc_routed.pb -rpx cpu_proj_methodology_drc_routed.rpx
 | Design       : cpu_proj
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 592
+             Violations found: 630
 +-----------+------------------+-------------------------------+------------+
 | Rule      | Severity         | Description                   | Violations |
 +-----------+------------------+-------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 560        |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 598        |
 | TIMING-18 | Warning          | Missing input or output delay | 24         |
 | TIMING-20 | Warning          | Non-clocked latch             | 8          |
 +-----------+------------------+-------------------------------+------------+
@@ -2832,6 +2832,196 @@ Related violations: <none>
 TIMING-17#560 Critical Warning
 Non-clocked sequential cell  
 The clock pin cpu_inst/pc_r_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#561 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out0_r_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#562 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out0_r_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#563 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out0_r_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#564 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out0_r_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#565 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out0_r_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#566 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#567 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#568 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#569 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#570 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#571 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#572 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#573 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#574 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#575 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#576 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#577 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#578 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#579 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[21]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#580 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[22]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#581 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[23]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#582 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[24]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#583 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[25]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#584 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[26]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#585 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[27]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#586 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[28]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#587 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[29]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#588 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#589 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#590 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#591 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#592 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#593 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#594 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#595 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#596 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#597 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/out1_r_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#598 Critical Warning
+Non-clocked sequential cell  
+The clock pin pdu_inst/ready_r_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-18#1 Warning
