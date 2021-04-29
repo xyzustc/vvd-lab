@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Apr 28 15:13:54 2021
-# Process ID: 432678
+# Start of session at: Thu Apr 29 11:15:10 2021
+# Process ID: 521011
 # Current directory: /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.runs/synth_1
 # Command line: vivado -log cpu_proj.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cpu_proj.tcl
 # Log file: /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.runs/synth_1/cpu_proj.vds

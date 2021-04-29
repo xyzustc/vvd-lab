@@ -234,14 +234,14 @@ dist_mem_gen_1 DataMem(
   .d(reg2data),        // input wire [31 : 0] d
   .dpra(m_rf_addr),  // input wire [7 : 0] dpra
   .clk(clk),    // input wire clk
-  .we(MemWrite),      // input wire we
+  .we(MemWrite & data_not_io),      // input wire we
   .spo(data),    // output wire [31 : 0] spo
   .dpo(m_data)    // output wire [31 : 0] dpo
 );
 //io regarded as data mem
 assign io_addr = addr_data_or_io;
 assign io_dout = reg2data;
-assign io_we = MemWrite;
+assign io_we = MemWrite & ~data_not_io;
 // decide io or dataMem
 always @(*) begin
     case (data_not_io)

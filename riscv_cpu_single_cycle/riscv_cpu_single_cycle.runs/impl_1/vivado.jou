@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Apr 28 15:14:44 2021
-# Process ID: 432866
+# Start of session at: Thu Apr 29 11:16:18 2021
+# Process ID: 521433
 # Current directory: /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.runs/impl_1
 # Command line: vivado -log cpu_proj.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source cpu_proj.tcl -notrace
 # Log file: /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.runs/impl_1/cpu_proj.vdi
