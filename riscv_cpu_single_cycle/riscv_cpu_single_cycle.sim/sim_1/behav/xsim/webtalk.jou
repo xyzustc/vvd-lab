@@ -2,11 +2,11 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Apr 27 17:24:28 2021
-# Process ID: 258063
+# Start of session at: Thu May 13 14:34:56 2021
+# Process ID: 1681127
 # Current directory: /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.sim/sim_1/behav/xsim
-# Command line: wbtcv -mode batch -source /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.sim/sim_1/behav/xsim/xsim.dir/cpu_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv -mode batch -source /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.sim/sim_1/behav/xsim/xsim.dir/test_bench_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.sim/sim_1/behav/xsim/webtalk.jou
 #-----------------------------------------------------------
-source /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.sim/sim_1/behav/xsim/xsim.dir/cpu_behav/webtalk/xsim_webtalk.tcl -notrace
+source /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.sim/sim_1/behav/xsim/xsim.dir/test_bench_behav/webtalk/xsim_webtalk.tcl -notrace

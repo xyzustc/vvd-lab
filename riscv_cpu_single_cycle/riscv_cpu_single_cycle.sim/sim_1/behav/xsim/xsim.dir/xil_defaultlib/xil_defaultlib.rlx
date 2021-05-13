@@ -3,8 +3,11 @@
 May 24 2019
 14:51:52
 /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
-/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1619451143,verilog,,/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/RegFile.v,,dist_mem_gen_0,,,,,,,,
-/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v,1619453678,verilog,,/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,,dist_mem_gen_1,,,,,,,,
-/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/RegFile.v,1619490453,verilog,,/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/alu_temp.v,,RegFile,,,,,,,,
+/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sim_1/new/test_bench.v,1620920547,verilog,,,,test_bench,,,,,,,,
+/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1619596893,verilog,,/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/RegFile.v,,dist_mem_gen_0,,,,,,,,
+/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v,1619545186,verilog,,/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,,dist_mem_gen_1,,,,,,,,
+/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/RegFile.v,1620923889,verilog,,/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/alu_temp.v,,RegFile,,,,,,,,
 /home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/alu_temp.v,1619454109,verilog,,/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/cpu.v,,alu_temp,,,,,,,,
-/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/cpu.v,1619526557,verilog,,,,cpu,,,,,,,,
+/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/cpu.v,1619694734,verilog,,/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/cpu_proj.v,,cpu,,,,,,,,
+/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/cpu_proj.v,1619545356,verilog,,/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/pdu_1cycle.v,,cpu_proj,,,,,,,,
+/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sources_1/new/pdu_1cycle.v,1620921584,verilog,,/home/ubuntu/riscv_cpu_single_cycle/riscv_cpu_single_cycle.srcs/sim_1/new/test_bench.v,,pdu_1cycle,,,,,,,,

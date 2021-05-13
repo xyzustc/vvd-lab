@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1619694906">
-  <File Type="VDS-TIMINGSUMMARY" Name="cpu_proj_timing_summary_synth.rpt"/>
+  <File Type="PA-TCL" Name="cpu_proj.tcl"/>
+  <File Type="REPORTS-TCL" Name="cpu_proj_reports.tcl"/>
+  <File Type="RDS-RDS" Name="cpu_proj.vds"/>
+  <File Type="RDS-UTIL" Name="cpu_proj_utilization_synth.rpt"/>
   <File Type="RDS-DCP" Name="cpu_proj.dcp"/>
   <File Type="RDS-UTIL-PB" Name="cpu_proj_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="cpu_proj_utilization_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="cpu_proj_drc_synth.rpt"/>
-  <File Type="RDS-RDS" Name="cpu_proj.vds"/>
-  <File Type="REPORTS-TCL" Name="cpu_proj_reports.tcl"/>
-  <File Type="VDS-TIMING-PB" Name="cpu_proj_timing_summary_synth.pb"/>
-  <File Type="PA-TCL" Name="cpu_proj.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/RegFile.v">
@@ -97,6 +94,6 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="dist_mem_gen_1"/>
   <BlockFileSet Type="BlockSrcs" Name="dist_mem_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dist_mem_gen_1"/>
 </GenRun>

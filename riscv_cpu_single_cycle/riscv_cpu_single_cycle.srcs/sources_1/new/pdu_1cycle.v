@@ -41,7 +41,7 @@ reg [31:0] out1_r;
 reg ready_r;
 reg [19:0] cnt;     //刷新计数器，刷新频率约为95Hz
 reg [1:0] check_r;  //查看信息类型, 00-运行结果，01-寄存器堆，10-存储器，11-PC
-
+// ERROR:
 reg [7:0] io_din_a; //_a表示为满足组合always描述要求定义的，下同
 reg ready_a;
 reg [4:0] out0_a;

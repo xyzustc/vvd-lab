@@ -35,6 +35,15 @@ module RegFile#(parameter WIDTH=32)
     );
     // 5 bits address, 32 regs 
 reg [WIDTH-1:0] regfile[0:31];
+
+integer i;
+initial begin
+		for(i=0; i <32; i = i+1) begin
+			regfile[i] = {WIDTH{0}};
+		end
+end
+
+
 assign rd0      = regfile[ra0];
 assign rd1      = regfile[ra1];
 assign rd_debug = regfile[ra_debug];
