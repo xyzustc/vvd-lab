@@ -5,7 +5,11 @@ delimiter:  .string      ", "
 
 .text
 
-    lw a1, num1 # 
+    lw a1, num1 #
+    li t1, 3 # t1 = 3
+    la t2, num2 # 
+    sw t1, 0(t2) # 
+    
     lw a2, num2 # 
     li s1, 5
 

@@ -1,8 +1,8 @@
 .text
     lw      x9, 0(x0)       #get io base address
 ready1:
-    lw      x6, 16(x9)      #read valid
-    beq     x6, x0, ready1  #if valid==1 then read data1
+    lw      x6, 16(x9)      #read valid .=>Based on the original pdu.v, this line read the ready(which is write only), it will return ZERO!
+    beq     x6, x0, ready1  #if valid==1 then read data1 .=>So here will always branch.
     lw      x1, 12(x9)      #read data_in
     sw      x1, 8(x9)       #display f1
 wating1:    

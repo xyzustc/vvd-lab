@@ -1,10 +1,12 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/lab2_fifo/lab2_fifo.srcs/sources_1/new/LCU.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/vvd-lab/lab2_fifo/lab2_fifo.srcs/sources_1/new/LCU.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module LCU
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/lab2_fifo/lab2_fifo.srcs/sources_1/new/reg4b_8d.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/vvd-lab/lab2_fifo/lab2_fifo.srcs/sources_1/new/reg4b_8d.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module reg4b_8d
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/lab2_fifo/lab2_fifo.srcs/sources_1/new/SDU.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/vvd-lab/lab2_fifo/lab2_fifo.srcs/sources_1/new/SDU.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module SDU
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/lab2_fifo/lab2_fifo.srcs/sources_1/new/fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/vvd-lab/lab2_fifo/lab2_fifo.srcs/sources_1/new/fifo.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module fifo
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/lab2_fifo/lab2_fifo.srcs/sim_1/new/test_bench.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/vvd-lab/lab2_fifo/lab2_fifo.srcs/sim_1/new/test_bench.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module test_bench
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/vvd-lab/lab2_fifo/lab2_fifo.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
