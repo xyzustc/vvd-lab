@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Thu May 20 22:35:51 2021
+| Date         : Tue May 25 12:35:44 2021
 | Host         : VM2639-zhou-vivado running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_bus_skew -warn_on_violation -file cpu_proj_bus_skew_routed.rpt -pb cpu_proj_bus_skew_routed.pb -rpx cpu_proj_bus_skew_routed.rpx
 | Design       : cpu_proj

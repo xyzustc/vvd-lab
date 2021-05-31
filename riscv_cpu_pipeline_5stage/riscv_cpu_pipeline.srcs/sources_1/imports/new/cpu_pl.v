@@ -186,15 +186,15 @@ always @(posedge clk, posedge rst) begin
         pc_IF_ID_r <= 32'h0000_0000;
         ir_IF_ID_r <= 32'h0000_0000;
     end
-    else if(flush_IF_ID) begin
-        pc4_IF_ID_r <= 32'h0000_0001;//1 just for debug, more easily locate the bug line.
-        pc_IF_ID_r <= 32'h0000_0001;
-        ir_IF_ID_r <= nop_inst;
-    end
     else if(stall_IF_ID) begin
         pc4_IF_ID_r <= pc4_IF_ID_r;
         pc_IF_ID_r <= pc_IF_ID_r;
         ir_IF_ID_r <= ir_IF_ID_r;
+    end
+    else if(flush_IF_ID) begin
+        pc4_IF_ID_r <= 32'h0000_0001;//1 just for debug, more easily locate the bug line.
+        pc_IF_ID_r <= 32'h0000_0001;
+        ir_IF_ID_r <= nop_inst;
     end
     else begin
         pc4_IF_ID_r <= pc_r + 4;
@@ -323,15 +323,6 @@ always @(posedge clk, posedge rst) begin
         ir_ID_EX_r <= 32'h0000_0000;
         imm_ID_EX_r <= 32'h0000_0000;
     end
-    else if(flush_ID_EX) begin
-        ctrl_ID_EX_r <= 32'h0000_0000;
-        pc4_ID_EX_r <= 32'h0000_0001;
-        pc_ID_EX_r <= 32'h0000_0001;
-        A_ID_EX_r <= 32'h0000_0000;
-        B_ID_EX_r <= 32'h0000_0000;
-        ir_ID_EX_r <= nop_inst;
-        imm_ID_EX_r <= 32'h0000_0000;
-    end
     else if(stall_ID_EX) begin
         ctrl_ID_EX_r <= ctrl_ID_EX_r;
         pc4_ID_EX_r <= pc4_ID_EX_r;
@@ -340,6 +331,15 @@ always @(posedge clk, posedge rst) begin
         B_ID_EX_r <= B_ID_EX_r;
         ir_ID_EX_r <= ir_ID_EX_r;
         imm_ID_EX_r <= imm_ID_EX_r;
+    end
+    else if(flush_ID_EX) begin
+        ctrl_ID_EX_r <= 32'h0000_0000;
+        pc4_ID_EX_r <= 32'h0000_0001;
+        pc_ID_EX_r <= 32'h0000_0001;
+        A_ID_EX_r <= 32'h0000_0000;
+        B_ID_EX_r <= 32'h0000_0000;
+        ir_ID_EX_r <= nop_inst;
+        imm_ID_EX_r <= 32'h0000_0000;
     end
     else begin
         ctrl_ID_EX_r <= ctrl_a;

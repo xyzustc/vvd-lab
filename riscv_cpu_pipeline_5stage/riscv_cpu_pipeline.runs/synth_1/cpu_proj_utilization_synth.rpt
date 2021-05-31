@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Thu May 20 22:33:52 2021
+| Date         : Tue May 25 12:34:08 2021
 | Host         : VM2639-zhou-vivado running 64-bit Ubuntu 18.04.4 LTS
 | Command      : report_utilization -file cpu_proj_utilization_synth.rpt -pb cpu_proj_utilization_synth.pb
 | Design       : cpu_proj
@@ -30,8 +30,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  976 |     0 |     63400 |  1.54 |
-|   LUT as Logic             |  904 |     0 |     63400 |  1.43 |
+| Slice LUTs*                |  968 |     0 |     63400 |  1.53 |
+|   LUT as Logic             |  896 |     0 |     63400 |  1.41 |
 |   LUT as Memory            |   72 |     0 |     19000 |  0.38 |
 |     LUT as Distributed RAM |   72 |     0 |           |       |
 |     LUT as Shift Register  |    0 |     0 |           |       |
@@ -149,12 +149,12 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDCE     |  577 |        Flop & Latch |
-| LUT6     |  440 |                 LUT |
-| LUT2     |  352 |                 LUT |
+| LUT6     |  431 |                 LUT |
+| LUT2     |  353 |                 LUT |
 | LUT5     |  132 |                 LUT |
-| LUT4     |  117 |                 LUT |
+| LUT4     |  121 |                 LUT |
 | RAMD32   |  108 |  Distributed Memory |
-| LUT3     |   77 |                 LUT |
+| LUT3     |   78 |                 LUT |
 | RAMS32   |   36 |  Distributed Memory |
 | CARRY4   |   29 |          CarryLogic |
 | FDPE     |   21 |        Flop & Latch |

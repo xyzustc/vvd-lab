@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
--- Date        : Thu May 20 21:01:04 2021
+-- Date        : Tue May 25 11:04:45 2021
 -- Host        : VM2639-zhou-vivado running 64-bit Ubuntu 18.04.4 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/ubuntu/riscv_cpu_pipeline/riscv_cpu_pipeline.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1_sim_netlist.vhdl

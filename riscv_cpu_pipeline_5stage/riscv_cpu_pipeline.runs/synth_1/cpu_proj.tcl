@@ -31,6 +31,10 @@ set_property ip_output_repo /home/ubuntu/riscv_cpu_pipeline/riscv_cpu_pipeline.c
 set_property ip_cache_permissions {read write} [current_project]
 add_files /home/ubuntu/riscv_cpu_pipeline/text.coe
 add_files /home/ubuntu/riscv_cpu_pipeline/data.coe
+add_files /home/ubuntu/vvd-lab/riscv_cpu_single_cycle/text.coe
+add_files /home/ubuntu/vvd-lab/riscv_cpu_single_cycle/data.coe
+add_files /home/ubuntu/riscv_cpu_single_cycle/text.coe
+add_files /home/ubuntu/riscv_cpu_single_cycle/data.coe
 read_verilog -library xil_defaultlib {
   /home/ubuntu/riscv_cpu_pipeline/riscv_cpu_pipeline.srcs/sources_1/imports/new/RegFile.v
   /home/ubuntu/riscv_cpu_pipeline/riscv_cpu_pipeline.srcs/sources_1/imports/new/alu_temp.v

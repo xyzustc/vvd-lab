@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date             : Thu May 20 22:35:50 2021
+| Date             : Tue May 25 12:35:43 2021
 | Host             : VM2639-zhou-vivado running 64-bit Ubuntu 18.04.4 LTS
 | Command          : report_power -file cpu_proj_power_routed.rpt -pb cpu_proj_power_summary_routed.pb -rpx cpu_proj_power_routed.rpx
 | Design           : cpu_proj
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.002 |        3 |       --- |             --- |
-| Slice Logic              |     0.002 |     2584 |       --- |             --- |
-|   LUT as Logic           |     0.002 |      937 |     63400 |            1.48 |
+| Slice Logic              |     0.002 |     2581 |       --- |             --- |
+|   LUT as Logic           |     0.002 |      930 |     63400 |            1.47 |
 |   Register               |    <0.001 |      610 |    126800 |            0.48 |
 |   CARRY4                 |    <0.001 |       29 |     15850 |            0.18 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   Others                 |     0.000 |        6 |       --- |             --- |
 |   LUT as Distributed RAM |     0.000 |      456 |     19000 |            2.40 |
 |   F7/F8 Muxes            |     0.000 |      224 |     63400 |            0.35 |
-| Signals                  |     0.006 |     1669 |       --- |             --- |
+| Signals                  |     0.006 |     1671 |       --- |             --- |
 | I/O                      |     0.016 |       25 |       210 |           11.90 |
 | Static Power             |     0.097 |          |           |                 |
 | Total                    |     0.123 |          |           |                 |
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Vccint    |       1.000 |     0.025 |       0.010 |      0.015 |
 | Vccaux    |       1.800 |     0.019 |       0.001 |      0.018 |
-| Vcco33    |       3.300 |     0.009 |       0.005 |      0.004 |
+| Vcco33    |       3.300 |     0.008 |       0.004 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -145,7 +145,7 @@ Table of Contents
 +------------+-----------+
 | cpu_proj   |     0.026 |
 |   cpu_inst |     0.004 |
-|   pdu_inst |     0.005 |
+|   pdu_inst |     0.006 |
 +------------+-----------+
 
 
