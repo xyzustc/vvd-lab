@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab6-DBP.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v" \
+"../../../../lab6-DBP.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v" \
+"../../../../lab6-DBP.srcs/sources_1/imports/new/RegFile.v" \
+"../../../../lab6-DBP.srcs/sources_1/imports/new/alu_temp.v" \
+"../../../../lab6-DBP.srcs/sources_1/imports/new/cpu_pl.v" \
+"../../../../lab6-DBP.srcs/sources_1/imports/new/cpu_proj.v" \
+"../../../../lab6-DBP.srcs/sources_1/imports/new/pdu_pl.v" \
+"../../../../lab6-DBP.srcs/sim_1/new/test_bench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

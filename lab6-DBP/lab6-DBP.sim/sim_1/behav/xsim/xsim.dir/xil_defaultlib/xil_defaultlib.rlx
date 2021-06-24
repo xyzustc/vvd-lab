@@ -1,0 +1,13 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/ubuntu/lab6-DBP/lab6-DBP.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/ubuntu/lab6-DBP/lab6-DBP.srcs/sim_1/new/test_bench.v,1623904440,verilog,,,,test_bench,,,,,,,,
+/home/ubuntu/lab6-DBP/lab6-DBP.srcs/sources_1/imports/new/RegFile.v,1622465641,verilog,,/home/ubuntu/lab6-DBP/lab6-DBP.srcs/sources_1/imports/new/alu_temp.v,,RegFile,,,,,,,,
+/home/ubuntu/lab6-DBP/lab6-DBP.srcs/sources_1/imports/new/alu_temp.v,1622465641,verilog,,/home/ubuntu/lab6-DBP/lab6-DBP.srcs/sources_1/imports/new/cpu_pl.v,,alu_temp,,,,,,,,
+/home/ubuntu/lab6-DBP/lab6-DBP.srcs/sources_1/imports/new/cpu_pl.v,1623923488,verilog,,/home/ubuntu/lab6-DBP/lab6-DBP.srcs/sources_1/imports/new/cpu_proj.v,,cpu_pl,,,,,,,,
+/home/ubuntu/lab6-DBP/lab6-DBP.srcs/sources_1/imports/new/cpu_proj.v,1622465641,verilog,,/home/ubuntu/lab6-DBP/lab6-DBP.srcs/sources_1/imports/new/pdu_pl.v,,cpu_proj,,,,,,,,
+/home/ubuntu/lab6-DBP/lab6-DBP.srcs/sources_1/imports/new/pdu_pl.v,1622465641,verilog,,/home/ubuntu/lab6-DBP/lab6-DBP.srcs/sim_1/new/test_bench.v,,pdu_pl,,,,,,,,
+/home/ubuntu/lab6-DBP/lab6-DBP.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1623904322,verilog,,/home/ubuntu/lab6-DBP/lab6-DBP.srcs/sources_1/imports/new/RegFile.v,,dist_mem_gen_0,,,,,,,,
+/home/ubuntu/lab6-DBP/lab6-DBP.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v,1623895248,verilog,,/home/ubuntu/lab6-DBP/lab6-DBP.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,,dist_mem_gen_1,,,,,,,,
